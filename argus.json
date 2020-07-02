@@ -1,0 +1,7 @@
+{
+    "argusInc": {
+        "logger": {
+            "debug": true
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@argus-inc/logger",
+  "version": "0.0.1",
+  "description": "Enhanced logging systen for cli applications.",
+  "main": "lib/Logger.js",
+  "types": "lib/Logger.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
+    "prepublishOnly" : "yarn test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags",
+    "patch": "npm version patch && npm publish",
+    "test": "jest --config jest.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/argus-inc/logger"
+  },
+  "author": "Mederic Burlet",
+  "license": "GPL-3-0-only",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/argus-inc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.13",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}

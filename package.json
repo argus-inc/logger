@@ -1,13 +1,13 @@
 {
   "name": "@argus-inc/logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Enhanced logging systen for cli applications.",
   "main": "lib/Logger.js",
   "types": "lib/Logger.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "yarn build",
-    "prepublishOnly" : "yarn test",
+    "prepublishOnly": "yarn test",
     "version": "git add -A src",
     "postversion": "git push && git push --tags",
     "patch": "npm version patch && npm publish",

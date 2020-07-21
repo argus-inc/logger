@@ -1,6 +1,6 @@
 {
   "name": "@argus-inc/logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Enhanced logging systen for cli applications.",
   "main": "lib/Logger.js",
   "types": "lib/Logger.d.ts",
